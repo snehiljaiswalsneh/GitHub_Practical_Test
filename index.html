@@ -4,41 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Snehil Jaiswal, B.Tech CSE & IT student">
+
   <title>Snehil Jaiswal | Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navbar (added in feature-navbar branch) -->
+  <!-- Navbar (feature-navbar branch) -->
   <header class="navbar">
     <a href="#home" class="logo">Snehil Jaiswal</a>
-    <nav>
+
+    <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
-      <button id="theme-btn" type="button">Dark mode</button>
+
+      <button
+        id="theme-btn"
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        Dark mode
+      </button>
     </nav>
   </header>
 
   <main>
+
     <!-- Home -->
     <section id="home" class="hero">
       <p>Hello, I am</p>
+
       <h1>Snehil Jaiswal</h1>
-      <p class="tagline">B.Tech CSE &amp; IT student who likes building things with code.</p>
+
+      <p class="tagline">
+        B.Tech CSE &amp; IT student who likes building things with code.
+      </p>
+
       <a href="#projects" class="btn">See my projects</a>
     </section>
 
     <!-- About -->
     <section id="about">
       <h2>About Me</h2>
+
       <p>
         I am a 3rd semester B.Tech student (CSE &amp; IT, Section A) at
         Ajeenkya DY Patil. I am still learning, and I enjoy turning what I learn
         in class into small projects. This portfolio is my first complete
         website made with HTML, CSS and JavaScript.
       </p>
+
       <ul class="details">
         <li><strong>URN:</strong> E25B032420</li>
         <li><strong>Semester:</strong> 3rd</li>
@@ -50,6 +69,7 @@
     <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
+
       <ul class="skills">
         <li>C++ (Principles of Programming)</li>
         <li>DBMS &amp; SQL (MySQL)</li>
@@ -62,30 +82,80 @@
     <!-- Projects -->
     <section id="projects">
       <h2>Mini Projects</h2>
+
       <div class="project-list">
 
         <article class="project">
           <h3>NutriGuardAI</h3>
-          <p>AI-powered food safety and nutrition analysis system. It detects harmful, banned and allergenic ingredients, analyzes vitamins and minerals, recommends safer alternatives, and gives gym, fitness and healthy lifestyle insights.</p>
-          <a href="https://github.com/snehiljaiswalsneh/NutriGuardAI" target="_blank" rel="noopener">View on GitHub</a>
+
+          <p>
+            AI-powered food safety and nutrition analysis system. It detects
+            harmful, banned and allergenic ingredients, analyzes vitamins and
+            minerals, recommends safer alternatives, and gives gym, fitness
+            and healthy lifestyle insights.
+          </p>
+
+          <a
+            href="https://github.com/snehiljaiswalsneh/NutriGuardAI"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
         </article>
 
         <article class="project">
           <h3>Sales Data Filter &amp; Report Engine</h3>
-          <p>A Python project using NumPy to simulate yearly sales of 10 stores over 12 months. It uses 2D slicing, Boolean masking, combined conditions and fancy indexing to create monthly, quarterly, store-wise and growth target reports.</p>
-          <a href="https://github.com/snehiljaiswalsneh/Sales-Data-Filter-Report-Engine" target="_blank" rel="noopener">View on GitHub</a>
+
+          <p>
+            A Python project using NumPy to simulate yearly sales of 10 stores
+            over 12 months. It uses 2D slicing, Boolean masking, combined
+            conditions and fancy indexing to create monthly, quarterly,
+            store-wise and growth target reports.
+          </p>
+
+          <a
+            href="https://github.com/snehiljaiswalsneh/Sales-Data-Filter-Report-Engine"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
         </article>
 
         <article class="project">
           <h3>Weather Dashboard</h3>
-          <p>A responsive web app made with HTML, CSS and JavaScript. It shows real-time weather details for any city the user searches, in a clean and simple interface.</p>
-          <a href="https://github.com/snehiljaiswalsneh/Weather-Dashboard" target="_blank" rel="noopener">View on GitHub</a>
+
+          <p>
+            A responsive web app made with HTML, CSS and JavaScript. It shows
+            real-time weather details for any city the user searches, in a
+            clean and simple interface.
+          </p>
+
+          <a
+            href="https://github.com/snehiljaiswalsneh/Weather-Dashboard"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
         </article>
 
         <article class="project">
           <h3>Birthday Frontend</h3>
-          <p>My Birthday Wishes project, a small frontend page made to wish someone a happy birthday.</p>
-          <a href="https://github.com/snehiljaiswalsneh/Birthday-forntend" target="_blank" rel="noopener">View on GitHub</a>
+
+          <p>
+            My Birthday Wishes project, a small frontend page made to wish
+            someone a happy birthday.
+          </p>
+
+          <a
+            href="https://github.com/snehiljaiswalsneh/Birthday-forntend"
+            target="_blank"
+            rel="noopener"
+          >
+            View on GitHub
+          </a>
         </article>
 
       </div>
@@ -94,17 +164,47 @@
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:snehiljaiswalsneh@gmail.com">snehiljaiswalsneh@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/snehiljaiswalsneh" target="_blank" rel="noopener">github.com/snehiljaiswalsneh</a></p>
+
+      <p>
+        Email:
+        <a href="mailto:snehiljaiswalsneh@gmail.com">
+          snehiljaiswalsneh@gmail.com
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/snehiljaiswalsneh"
+          target="_blank"
+          rel="noopener"
+        >
+          github.com/snehiljaiswalsneh
+        </a>
+      </p>
     </section>
+
   </main>
 
-  <!-- Footer (added in feature-footer branch) -->
+  <!-- Footer (feature-footer branch) -->
   <footer class="footer">
-    <p>&copy; 2026 Snehil Jaiswal | CSE &amp; IT, Ajeenkya DY Patil</p>
-    <p><a href="mailto:snehiljaiswalsneh@gmail.com">Email</a> | <a href="https://github.com/snehiljaiswalsneh" target="_blank" rel="noopener">GitHub</a></p>
+    <p>
+      &copy; 2026 Snehil Jaiswal | CSE &amp; IT, Ajeenkya DY Patil
+    </p>
+
+    <p>
+      <a href="mailto:snehiljaiswalsneh@gmail.com">Email</a> |
+      <a
+        href="https://github.com/snehiljaiswalswalsneh"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
