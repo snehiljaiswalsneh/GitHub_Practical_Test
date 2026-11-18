@@ -1,0 +1,202 @@
+/* ---------- Basic setup ---------- */
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --text: #222831;
+  --muted: #555b66;
+  --accent: #2563eb;
+  --border: #dde1e7;
+}
+
+/* Dark mode colours (class is toggled by script.js) */
+body.dark {
+  --bg: #14171c;
+  --card: #1e232b;
+  --text: #e8eaed;
+  --muted: #a3a9b3;
+  --accent: #6ea0ff;
+  --border: #2c333d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.navbar nav a:hover {
+  color: var(--accent);
+}
+
+#theme-btn {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* ---------- Sections ---------- */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+section h2 {
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+}
+
+.hero {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin: 4px 0 10px;
+}
+
+.tagline {
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* About */
+.details {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.details li {
+  padding: 4px 0;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li {
+  padding: 8px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.project {
+  padding: 18px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.project h3 {
+  margin-bottom: 8px;
+}
+
+.project p {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Contact */
+#contact p {
+  margin-bottom: 6px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 22px 24px;
+  text-align: center;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+}
